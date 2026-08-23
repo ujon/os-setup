@@ -1,6 +1,6 @@
 # Agent Instructions
 
-## Skill Guidelines
+## Skill Usage Guidelines
 
 - When creating commits, use the `commit-message` skill.
 
