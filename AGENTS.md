@@ -7,9 +7,4 @@
 ## Documentation Guidelines
 
 - Keep `README.md` and `README.*.md` in the same directory synchronized.
-- When synchronizing localized READMEs, translation may be skipped for content matching these patterns:
-
-  ````regex
-  ```[\s\S]*?```
-  <details>\s*<summary>Links</summary>[\s\S]*?</details>
-  ````
+- When translating localized READMEs, translate prose naturally. Keep code blocks unchanged, and retain English for technical terms, product names, and labels when English is clearer or more conventional in context.
