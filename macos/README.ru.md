@@ -1,6 +1,6 @@
 # macOS
 
-[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Русский](README.ru.md) · [Français](README.fr.md)
+[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Русский](README.ru.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [اردو](README.ur.md)
 
 Настройка macOS.
 
@@ -14,20 +14,23 @@
 
 Перемещайтесь стрелками, выбирайте пакеты клавишей Space и нажмите Enter для установки.
 
-## Homebrew
+## Ручная установка
 
-### Установка
+### Homebrew
+
+#### Установка
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Пакеты
+#### Пакеты
 
 ```sh
 brew install git
 brew install n
 brew install podman
+brew install --cask podman-desktop
 brew install --cask chatgpt
 brew install --cask codex
 brew install --cask claude
@@ -47,6 +50,7 @@ brew install --cask jetbrains-toolbox
 - Git: [Homebrew](https://formulae.brew.sh/formula/git) · [Official](https://git-scm.com/)
 - n: [Homebrew](https://formulae.brew.sh/formula/n) · [Official](https://github.com/tj/n)
 - Podman: [Homebrew](https://formulae.brew.sh/formula/podman) · [Official](https://podman.io/)
+- Podman Desktop: [Homebrew](https://formulae.brew.sh/cask/podman-desktop) · [Official](https://podman-desktop.io/)
 - ChatGPT: [Homebrew](https://formulae.brew.sh/cask/chatgpt) · [Official](https://learn.chatgpt.com/docs/app)
 - Codex CLI: [Homebrew](https://formulae.brew.sh/cask/codex) · [Official](https://learn.chatgpt.com/docs/codex/cli)
 - Claude: [Homebrew](https://formulae.brew.sh/cask/claude) · [Official](https://claude.com/download)
@@ -60,9 +64,9 @@ brew install --cask jetbrains-toolbox
 
 </details>
 
-## Zsh
+### Zsh
 
-### Установка зависимостей
+#### Установка зависимостей
 
 Установите Oh My Zsh и плагины:
 
@@ -74,7 +78,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting \
   "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 ```
 
-### Установка или обновление
+#### Установка или обновление
 
 Замените `.zshrc` этим шаблоном:
 
@@ -92,8 +96,6 @@ exec zsh
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 </details>
-
-## Пользовательские скрипты
 
 ### project-init
 

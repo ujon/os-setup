@@ -9,6 +9,7 @@ packages=(
   "formula|git|Git|Distributed version control system"
   "formula|n|n|Node.js version management"
   "formula|podman|Podman|OCI container and pod management"
+  "cask|podman-desktop|Podman Desktop|Container and Kubernetes desktop app"
   "cask|chatgpt|ChatGPT|ChatGPT desktop app"
   "cask|codex|Codex CLI|OpenAI Codex CLI"
   "cask|claude|Claude|Claude desktop app"

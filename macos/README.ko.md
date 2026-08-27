@@ -1,6 +1,6 @@
 # macOS
 
-[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Русский](README.ru.md) · [Français](README.fr.md)
+[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Русский](README.ru.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [اردو](README.ur.md)
 
 macOS 설정입니다.
 
@@ -14,20 +14,23 @@ macOS 설정입니다.
 
 방향키로 이동하고 Space로 선택한 다음 Enter를 눌러 설치합니다.
 
-## Homebrew
+## 수동 설치
 
-### 설치
+### Homebrew
+
+#### 설치
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 패키지
+#### 패키지
 
 ```sh
 brew install git
 brew install n
 brew install podman
+brew install --cask podman-desktop
 brew install --cask chatgpt
 brew install --cask codex
 brew install --cask claude
@@ -47,6 +50,7 @@ brew install --cask jetbrains-toolbox
 - Git: [Homebrew](https://formulae.brew.sh/formula/git) · [Official](https://git-scm.com/)
 - n: [Homebrew](https://formulae.brew.sh/formula/n) · [Official](https://github.com/tj/n)
 - Podman: [Homebrew](https://formulae.brew.sh/formula/podman) · [Official](https://podman.io/)
+- Podman Desktop: [Homebrew](https://formulae.brew.sh/cask/podman-desktop) · [Official](https://podman-desktop.io/)
 - ChatGPT: [Homebrew](https://formulae.brew.sh/cask/chatgpt) · [Official](https://learn.chatgpt.com/docs/app)
 - Codex CLI: [Homebrew](https://formulae.brew.sh/cask/codex) · [Official](https://learn.chatgpt.com/docs/codex/cli)
 - Claude: [Homebrew](https://formulae.brew.sh/cask/claude) · [Official](https://claude.com/download)
@@ -60,9 +64,9 @@ brew install --cask jetbrains-toolbox
 
 </details>
 
-## Zsh
+### Zsh
 
-### 의존성 설치
+#### 의존성 설치
 
 Oh My Zsh와 플러그인을 설치합니다.
 
@@ -74,7 +78,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting \
   "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 ```
 
-### 설치 또는 업데이트
+#### 설치 또는 업데이트
 
 `.zshrc`를 이 보일러플레이트로 교체합니다.
 
@@ -92,8 +96,6 @@ exec zsh
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 </details>
-
-## 사용자 스크립트
 
 ### project-init
 
