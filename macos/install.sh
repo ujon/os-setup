@@ -7,6 +7,7 @@ readonly raw_base_url="https://raw.githubusercontent.com/ujon/os-setup/main/maco
 # Each entry is "type|name|label|description".
 packages=(
   "formula|git|Git|Distributed version control system"
+  "formula|make|GNU Make|Utility for directing compilation"
   "formula|n|n|Node.js version management"
   "formula|podman|Podman|OCI container and pod management"
   "cask|podman-desktop|Podman Desktop|Container and Kubernetes desktop app"

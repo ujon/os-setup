@@ -28,6 +28,7 @@ macOS のセットアップ。
 
 ```sh
 brew install git
+brew install make
 brew install n
 brew install podman
 brew install --cask podman-desktop
@@ -50,6 +51,7 @@ brew install --cask jetbrains-toolbox
 
 - Homebrew: [Official](https://brew.sh/)
 - Git: [Homebrew](https://formulae.brew.sh/formula/git) · [Official](https://git-scm.com/)
+- GNU Make: [Homebrew](https://formulae.brew.sh/formula/make) · [Official](https://www.gnu.org/software/make/)
 - n: [Homebrew](https://formulae.brew.sh/formula/n) · [Official](https://github.com/tj/n)
 - Podman: [Homebrew](https://formulae.brew.sh/formula/podman) · [Official](https://podman.io/)
 - Podman Desktop: [Homebrew](https://formulae.brew.sh/cask/podman-desktop) · [Official](https://podman-desktop.io/)
