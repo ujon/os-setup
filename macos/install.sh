@@ -14,6 +14,8 @@ packages=(
   "cask|codex|Codex CLI|OpenAI Codex CLI"
   "cask|claude|Claude|Claude desktop app"
   "cask|claude-code|Claude Code|Anthropic Claude Code"
+  "formula|ollama|Ollama|Local large language model runtime"
+  "cask|ollama-app|Ollama App|Local large language model desktop app"
   "cask|google-chrome|Google Chrome|Google web browser"
   "cask|gitkraken|GitKraken|Git desktop client"
   "cask|visual-studio-code|Visual Studio Code|Source code editor"

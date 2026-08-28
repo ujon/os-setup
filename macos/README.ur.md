@@ -35,6 +35,8 @@ brew install --cask chatgpt
 brew install --cask codex
 brew install --cask claude
 brew install --cask claude-code
+brew install ollama
+brew install --cask ollama-app
 brew install --cask google-chrome
 brew install --cask gitkraken
 brew install --cask visual-studio-code
@@ -55,6 +57,8 @@ brew install --cask jetbrains-toolbox
 - Codex CLI: [Homebrew](https://formulae.brew.sh/cask/codex) · [Official](https://learn.chatgpt.com/docs/codex/cli)
 - Claude: [Homebrew](https://formulae.brew.sh/cask/claude) · [Official](https://claude.com/download)
 - Claude Code: [Homebrew](https://formulae.brew.sh/cask/claude-code) · [Official](https://claude.com/product/claude-code)
+- Ollama: [Homebrew](https://formulae.brew.sh/formula/ollama) · [Official](https://ollama.com/)
+- Ollama App: [Homebrew](https://formulae.brew.sh/cask/ollama-app) · [Official](https://ollama.com/)
 - Google Chrome: [Homebrew](https://formulae.brew.sh/cask/google-chrome) · [Official](https://www.google.com/chrome/)
 - GitKraken: [Homebrew](https://formulae.brew.sh/cask/gitkraken) · [Official](https://www.gitkraken.com/)
 - Visual Studio Code: [Homebrew](https://formulae.brew.sh/cask/visual-studio-code) · [Official](https://code.visualstudio.com/)
