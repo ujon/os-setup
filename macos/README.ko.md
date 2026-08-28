@@ -121,3 +121,48 @@ chmod +x "$HOME/.local/bin/project-init"
 ```sh
 project-init [directory]
 ```
+
+### SSH
+
+#### 키 생성
+
+계정마다 키를 하나씩 만듭니다.
+
+```sh
+mkdir -p "$HOME/.ssh"
+ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "personal_email@example.com" -f "$HOME/.ssh/id_ed25519_personal"
+```
+
+#### `~/.ssh/config`에 호스트 등록
+
+```sh
+mkdir -p "$HOME/.ssh"
+cat >> "$HOME/.ssh/config" <<'EOF'
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+
+# Default account
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+# Extra account: git clone git@personal.github.com:<user>/<repo>.git
+Host personal.github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_personal
+  IdentitiesOnly yes
+EOF
+```
+
+<details>
+<summary>Links</summary>
+
+- [GitHub SSH keys](https://github.com/settings/keys)
+- [Connecting to GitHub with SSH](https://docs.github.com/authentication/connecting-to-github-with-ssh)
+
+</details>
