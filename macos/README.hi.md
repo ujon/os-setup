@@ -103,7 +103,7 @@ exec zsh
 
 </details>
 
-### project-init
+### init-project
 
 एजेंट फ़ाइलें बनाता है और वैकल्पिक रूप से Git को इनिशियलाइज़ करता है।
 
@@ -111,15 +111,15 @@ exec zsh
 
 ```sh
 mkdir -p "$HOME/.local/bin"
-curl -fsSL https://raw.githubusercontent.com/ujon/os-setup/main/macos/project-init.sh \
-  -o "$HOME/.local/bin/project-init"
-chmod +x "$HOME/.local/bin/project-init"
+curl -fsSL https://raw.githubusercontent.com/ujon/os-setup/main/macos/init-project.sh \
+  -o "$HOME/.local/bin/init-project"
+chmod +x "$HOME/.local/bin/init-project"
 ```
 
 चलाएँ:
 
 ```sh
-project-init [directory]
+init-project [directory]
 ```
 
 ### SSH

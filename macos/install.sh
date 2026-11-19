@@ -418,10 +418,10 @@ else
   install -m 0644 "$temp_dir/zshrc" "$HOME/.zshrc"
 fi
 
-step "Installing project-init"
-curl -fsSL "$raw_base_url/project-init.sh" -o "$temp_dir/project-init"
+step "Installing init-project"
+curl -fsSL "$raw_base_url/init-project.sh" -o "$temp_dir/init-project"
 mkdir -p "$HOME/.local/bin"
-install -m 0755 "$temp_dir/project-init" "$HOME/.local/bin/project-init"
+install -m 0755 "$temp_dir/init-project" "$HOME/.local/bin/init-project"
 
 printf '\n%sSetup complete.%s Run %sexec zsh%s to reload your shell.\n' \
   "$green" "$reset" "$bold" "$reset"

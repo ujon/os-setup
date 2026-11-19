@@ -2,6 +2,20 @@
 
 set -eu
 
+# Variables
+
+# Default content for a new AGENTS.md.
+agent_instructions='# Agent Instructions
+
+- Organize code by feature and keep each module focused on a clear responsibility.
+- Keep files manageable. Split large files by responsibility without creating unnecessary files or functions.
+- Move shared logic into common modules or `utils/`. Keep feature-specific logic within its feature.
+- Allow short, simple duplication when extraction would add complexity. Avoid unnecessary abstractions.
+- Write brief comments in English, focusing on intent and non-obvious behavior.
+- Use clear names and familiar words. Avoid uncommon terms and unclear abbreviations.'
+
+# Main
+
 project_dir="${1:-$PWD}"
 
 if [ ! -d "$project_dir" ]; then
@@ -42,7 +56,7 @@ mkdir -p \
   "$project_dir/.claude"
 
 if [ ! -e "$project_dir/AGENTS.md" ]; then
-  touch "$project_dir/AGENTS.md"
+  printf '%s\n' "$agent_instructions" >"$project_dir/AGENTS.md"
 fi
 
 if [ ! -L "$project_dir/CLAUDE.md" ]; then

@@ -103,7 +103,7 @@ exec zsh
 
 </details>
 
-### project-init
+### init-project
 
 Создаёт файлы агентов и при необходимости инициализирует Git.
 
@@ -111,15 +111,15 @@ exec zsh
 
 ```sh
 mkdir -p "$HOME/.local/bin"
-curl -fsSL https://raw.githubusercontent.com/ujon/os-setup/main/macos/project-init.sh \
-  -o "$HOME/.local/bin/project-init"
-chmod +x "$HOME/.local/bin/project-init"
+curl -fsSL https://raw.githubusercontent.com/ujon/os-setup/main/macos/init-project.sh \
+  -o "$HOME/.local/bin/init-project"
+chmod +x "$HOME/.local/bin/init-project"
 ```
 
 Запуск:
 
 ```sh
-project-init [directory]
+init-project [directory]
 ```
 
 ### SSH
